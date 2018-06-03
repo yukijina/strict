@@ -301,3 +301,73 @@ footer p {
 	padding: 12px;
 	margin-right: 8px;
 }
+
+/* MEDIA QUERY */
+@media(max-width: 875px) {
+
+	.projects-container h2 {
+	    font-size: 2.2rem;
+	}
+	footer p {
+		font-size: 1.3rem;
+    position: static;
+    display: block;
+    text-align: center;
+    padding-top: 10%;
+ }
+ .social-icon {
+    position: static;
+    display: block;
+    text-align: center;
+ }
+}
+
+@media(max-width: 630px) {
+	.logo {
+     text-align: center;
+   }
+
+ #header h1 {
+     font-size: 4rem;
+     letter-spacing: 0.5rem;
+	 }
+ .info-wrapper h2 {
+	 font-size: 2rem;
+  }
+ .info-wrapper p {
+	 font-size: 1rem;
+	 line-height: 160%;
+  }
+ #feature h3 {
+	 font-size: 1.1rem;
+  }
+ #feature p {;
+    font-size: 1rem;
+  }
+}
+
+@media(max-width: 400px) {
+	#header h1 {
+    font-size: 3rem;
+	}
+ #header h2 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+		padding: 8%;
+ }
+  .projects-container h2,
+	#contact h2 {
+    font-size: 1.5rem;
+	}
+  .projects-container p,
+	#contact p,
+	input[type=text],
+	textarea,
+	.subscribe label,
+  .subscribe label {
+	font-size: 1rem;
+  }
+	.contact-form {
+		 max-width: 100%;
+  }
+}
