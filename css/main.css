@@ -1,0 +1,303 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	  font-family: 'Lato', sans-serif;
+}
+
+/* common property
+h2 h3 color: color: #2d3950;
+text color : #99999F; */
+
+
+
+/*=====================================
+[1] NAVIGATION
+[2] HEADER
+[3] SECTION / INFORMATION
+[4] SECTION / FEATURE
+[5] SECTION / PROJECTS
+[6] Contact
+[7] FOOTER
+======================================*/
+
+/*========= [1] NAVIGATION  ==========*/
+.navigation {
+	height: 3%;
+}
+.logo {
+	display: block;
+	margin: 25px 80px;
+}
+/*========= [2] HEADER  ==========*/
+#header {
+	background-image: url("../img/bg1.png");
+	background-position: center;
+	background-size: cover;
+	height: 80vh;
+	text-align: center;
+	padding: 8% 0;
+}
+
+#header h1 {
+	color: #ffffff;
+	font-size: 6rem;
+	letter-spacing: 0.7rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-bottom: 1.5%;
+}
+#header hr {
+	border-color: #15a4fa;
+	width: 50%;
+	margin: 0 auto;
+}
+#header h2 {
+	color: #ffffff;
+  font-size: 1.2rem;;
+  line-height: 5rem;
+}
+
+#header button {
+	color: #ffffff;
+	font-size: 0.8rem;
+	background-color: transparent;
+	border-right: transparent;
+	border-bottom: transparent;
+  border-top: 1px solid #15a4fa;
+  border-left: 1px solid #15a4fa;
+  border-radius: 2px;
+  padding: 10px 15px;
+  cursor: pointer;
+	transition: 0.2s ease;
+}
+
+#header button:hover {
+	color: #babeb8;
+	transform: translateY(-10px);
+}
+#header button:active {
+	color: #babeb8;
+	transform: translateY(-5px);
+}
+
+/*  Icon in the header  */
+/* put br in HTML after button tag. Then margin-top
+works from button tag!!!! trick of br and inline-block*/
+
+#header a {
+	display: inline-block;
+	color: #fff;
+	margin-top: 1.5%;
+}
+
+/*========= [3] SECTIONO /INFORMATION ==========*/
+#info {
+	background-color: #F6F9F9;
+	padding: 10% 0;
+}
+.info-wrapper {
+	max-width: 75%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.info-wrapper h2 {
+	color: #2d3950;
+  font-size: 3rem;
+	margin-bottom: 2%;
+}
+
+.info-wrapper p {
+	color: #99999F;
+	font-size: 1.1rem;
+	line-height: 190%;
+}
+
+/*========= [4] SECTION / FEATURE  ==========*/
+#feature {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	width: 90%;
+	margin: 10% auto;
+	text-align: center;
+}
+.box {
+	margin: 0 1%;
+	padding: 10px;
+}
+.iconbox {
+	background: linear-gradient(to right, #1e5799 0%, #207cca 50%, #2989d8 50%, #7db9e8 100%);
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+	/***** width 100% & margin: 0 auto -->center of whole box */
+	position: relative;
+}
+#feature i {
+    color: #fff;
+    display: block;
+    font-size: 2rem;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+}
+
+#feature h3 {
+	color: #2d3950;
+	font-size: 1.5rem;
+	margin-top: 5%;
+	margin-bottom: 3%;
+}
+
+#feature p {
+	color: #99999F;
+	font-size: 1.2rem;
+	padding: 0 5%;
+}
+
+/*========= [5] PROJECTS  ==========*/
+#projects {
+	background-color: #F6F9F9;
+	padding: 7% 0;
+}
+.projects-container {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.projects-container  h2 {
+	color: #2d3950;
+	font-size: 3.2rem;
+}
+
+.projects-container  p {
+	color: #99999F;
+	font-size: 1.8rem;
+	margin-top: 2%;
+	margin-bottom: 8%;
+}
+.photo-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.photo-box {
+	width: 30%;
+	height: auto;
+	margin-bottom: 4%;
+
+
+}
+.photo-box img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*========= [6] CONTACT  ==========*/
+#contact {
+	background-image: linear-gradient(rgba(45, 57, 80, 0.9), rgba(45, 57, 80, 0.9)), url(../img/contact.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
+	text-align: center;
+
+}
+
+#contact h2 {
+	color: #fff;
+	font-size: 3.5rem;
+	padding-top: 15%;
+}
+
+#contact p {
+	 color: #99999F;
+	 font-size: 1.4rem;
+	 margin-top: 20px;
+	 margin-bottom: 25px;
+}
+
+.contact-form {
+	max-width: 60%;
+	margin: 0 auto;
+}
+
+input[type=text],
+textarea {
+	background-color: transparent;
+	color:  #99999F;
+	font-size: 1.4rem;
+	border: 2px solid #fff;
+	width: 280px;
+	padding-left: 10px;
+}
+
+input[type=text] {
+	display: block;
+	margin: 10px auto;
+  height: 60px;
+}
+textarea {
+	height: 200px;
+}
+
+.subscribe {
+	color: #fff;
+	display: inline-block;
+	margin-top: 4%;
+	margin-bottom: 15%;
+}
+.subscribe input[type=checkbox] {
+ transform: scale(1.8);
+}
+
+.subscribe label {
+	font-size: 1.3rem;
+	font-weight: 700;
+	padding-left: 15px;
+  padding-right: 40px;
+}
+.subscribe button {
+	background-color: transparent;
+	color: #fff;
+	font-size: 1rem;
+	border: 2px solid #15a4fa;
+	padding: 18px 35px;
+	border-radius: 3px;
+}
+
+/*========= [7] FOOTER  ==========*/
+footer {
+	position: relative;
+	height: 100px;
+}
+footer p {
+	font-size: 1.5rem;
+	position: absolute;
+	top: 50%;
+	left: 12%;
+	transform: translateY(-50%);
+}
+
+.social-icon {
+	position: absolute;
+	top: 50%;
+	left: 70%;
+	transform: translateY(-50%);
+}
+
+.social-icon i {
+	font-size: 1.5rem;
+	background-color: #15a4fa;
+	color: #fff;
+	border-radius: 3px;
+	padding: 12px;
+	margin-right: 8px;
+}
